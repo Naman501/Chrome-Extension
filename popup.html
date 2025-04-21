@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSummarize</title>
+</head>
+<!-- <body style="
+min-width: 320px;
+padding: 16px;
+font-family: 'Segoe UI', 'Trebuchet MS', 'Lucida Grande', sans-serif;
+background-color: #f9f9f9;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+color: #333;
+line-height: 1.6;
+">
+    <select id="summary-type">
+        <option value="brief">Brief</option>
+        <option value="detailed"> Detailed</option>
+        <option value="bullets">Bullet Points</option>
+    </select>
+    <button id="summerize">Summarize</button>
+    <button id="copy">Copy</button>
+
+    <pre id="result">Select a type & click Summerize...</pre>
+
+
+    <script src="popup.js"></script>
+</body> -->
+<body>
+    <style>
+      body {
+        min-width: 320px;
+        max-width: 400px;
+        padding: 15px;
+        font-family: 'Segoe UI', 'Trebuchet MS', 'Lucida Grande', sans-serif;
+        background-color: #f9f9f9;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        color: #333;
+        line-height: 1.6;
+      }
+  
+      select, button {
+        padding: 10px 14px;
+        font-size: 14px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        margin: 8px 8px 8px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      }
+  
+      button {
+        background-color: #4A90E2;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      button:hover {
+        background-color: #357ABD;
+      }
+  
+      #result {
+        margin-top: 16px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 14px;
+        border: 2px solid #ddd;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        white-space: pre-wrap;
+        font-size: 14px;
+        min-height: 150px;
+        max-height: 400px;
+        line-height: 1.5;
+      }
+
+      #copy{
+        background-color: seagreen;
+      }
+    </style>
+  
+  <h2>AI Summary</h2>
+    <div>
+        <select id="summary-type">
+            <option value="brief">Brief</option>
+            <option value="detailed">Detailed</option>
+            <option value="bullets">Bullet Points</option>
+          </select>
+        
+          <button id="summerize">Summarize</button>
+          <button id="copy">Copy</button>
+    </div>
+  
+    <pre id="result">Select a type & click Summarize...</pre>
+  
+    <script src="popup.js"></script>
+  </body>
+  
+</html>
